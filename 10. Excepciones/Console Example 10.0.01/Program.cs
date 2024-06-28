@@ -1,9 +1,7 @@
 ﻿
-//--------------------------------------------------------
-int[] array = { 1, 2, 3 };
-array[4] = 4; // IndexOutOfRangeException
+using Console_Example_10._0._01;
 
-//--------------------------------------------------------
-int num1 = 4;
-int num2 = 0;
-int var = num1 / num2; // DivideByZeroException
+Class1.Metodo1();
+
+Class1.Metodo2();
+
