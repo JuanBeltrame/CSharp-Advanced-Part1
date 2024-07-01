@@ -19,6 +19,10 @@ namespace Console_Example_10._0._01
         {
             int[] array = { 1, 2, 3 };
             array[4] = 4; // IndexOutOfRangeException
+
+            
         }
+
+        
     }
 }
