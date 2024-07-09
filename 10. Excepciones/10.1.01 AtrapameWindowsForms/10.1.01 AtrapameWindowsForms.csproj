@@ -9,4 +9,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\10.1.01 AtrapameLibrary\10.1.01 AtrapameLibrary.csproj" />
+  </ItemGroup>
+
 </Project>

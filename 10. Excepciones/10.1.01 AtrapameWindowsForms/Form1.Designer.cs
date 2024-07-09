@@ -85,6 +85,7 @@
             btnCalcular.TabIndex = 5;
             btnCalcular.Text = "Calcular";
             btnCalcular.UseVisualStyleBackColor = true;
+            btnCalcular.Click += btnCalcular_Click;
             // 
             // Form1
             // 
@@ -97,8 +98,11 @@
             Controls.Add(textKilometros);
             Controls.Add(btnLitros);
             Controls.Add(btnKilometro);
+            Enabled = false;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             MinimizeBox = false;
+            MinimumSize = new Size(821, 569);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculador";
