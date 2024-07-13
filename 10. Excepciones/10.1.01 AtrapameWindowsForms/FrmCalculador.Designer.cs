@@ -1,6 +1,6 @@
 ﻿namespace _10._1._01_AtrapameWindowsForms
 {
-    partial class Form1
+    partial class FrmCalculador
     {
         /// <summary>
         ///  Required designer variable.
@@ -61,6 +61,7 @@
             textKilometros.Name = "textKilometros";
             textKilometros.Size = new Size(250, 47);
             textKilometros.TabIndex = 2;
+            textKilometros.TextChanged += textKilometros_TextChanged;
             // 
             // textLitros
             // 
@@ -68,6 +69,7 @@
             textLitros.Name = "textLitros";
             textLitros.Size = new Size(250, 47);
             textLitros.TabIndex = 3;
+            textLitros.TextChanged += textLitros_TextChanged;
             // 
             // rtbCalculador
             // 
@@ -76,6 +78,7 @@
             rtbCalculador.Size = new Size(321, 334);
             rtbCalculador.TabIndex = 4;
             rtbCalculador.Text = "";
+            rtbCalculador.TextChanged += rtbCalculador_TextChanged;
             // 
             // btnCalcular
             // 
@@ -87,23 +90,22 @@
             btnCalcular.UseVisualStyleBackColor = true;
             btnCalcular.Click += btnCalcular_Click;
             // 
-            // Form1
+            // FrmCalculador
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(789, 481);
+            ClientSize = new Size(1022, 686);
             Controls.Add(btnCalcular);
             Controls.Add(rtbCalculador);
             Controls.Add(textLitros);
             Controls.Add(textKilometros);
             Controls.Add(btnLitros);
             Controls.Add(btnKilometro);
-            Enabled = false;
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             MinimizeBox = false;
             MinimumSize = new Size(821, 569);
-            Name = "Form1";
+            Name = "FrmCalculador";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculador";
             ResumeLayout(false);

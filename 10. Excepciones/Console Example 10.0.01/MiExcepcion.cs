@@ -14,7 +14,7 @@ namespace Console_Example_10._0._01
 
         }
 
-        public MiExcepcion(string mensaje, Exception inner) : base(mensaje, inner)
+        public MiExcepcion(string mensaje, Exception innerException) : base(mensaje, innerException)
         {
 
         }
