@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _10._1._01_LanzarYAtraparLibrary.Exceptions
 {
-    internal class MiExcepcion : Exception
+    public class MiExcepcion : Exception
     {
         public MiExcepcion(string? message) : base(message)
         {

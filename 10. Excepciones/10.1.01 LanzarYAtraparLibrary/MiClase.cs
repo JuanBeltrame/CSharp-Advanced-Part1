@@ -13,11 +13,12 @@ namespace _10._1._01_LanzarYAtraparLibrary
         {
             try
             {
-                MiMetodoStatico();
+                MiClase mi = new(10);
             }
-            catch (DivideByZeroException)
+            catch (DivideByZeroException ex)
             {
-                throw;
+
+                throw new UnaExcepcion("Excepcion capturadara en ctor con parametros y re lanzada", ex);
             }
 
         }
@@ -26,13 +27,13 @@ namespace _10._1._01_LanzarYAtraparLibrary
         {
             try
             {
-                MiClase mi = new();
+                MiMetodoStatico();
             }
-            catch (DivideByZeroException ex)
+            catch (DivideByZeroException)
             {
-
-                throw new UnaExcepcion("Excepcion capturadara en ctor con parametros y re lanzada", ex);
+                throw;
             }
+            
         }
 
         public static void MiMetodoStatico() => throw new DivideByZeroException("Excepcion lanzada en mi metodo estatico MiClase");
