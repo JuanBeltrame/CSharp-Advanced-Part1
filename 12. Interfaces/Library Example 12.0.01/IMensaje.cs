@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Library_Example_12._0._01
 {
-    public class AnimalVolador
+    public interface IMensaje
     {
+        string EnviarMensaje();
     }
 }
