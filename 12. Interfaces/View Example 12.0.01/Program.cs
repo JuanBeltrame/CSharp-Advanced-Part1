@@ -5,7 +5,7 @@ Courier courier = new("Vault", "Dueller", "32713684");
 Carta carta = new("A4", 1, "Lobo");
 Email mail = new("jefe@gmail.com", "Programador@gmail.com");
 Cuervo cuervo = new("BloodRaven");
-
+ClasePrueba clasePrueba = new();
 
 IMensaje mensaje = paloma;
 Console.WriteLine(mensaje.EnviarMensaje());
@@ -27,3 +27,6 @@ Console.WriteLine("Implementacion explicita");
 Console.WriteLine("------------------------");
 string mensajeSecreto = ((IEncriptado)cuervo).EnviarMensaje();
 Console.WriteLine(mensajeSecreto);
+
+Courier courier1 = clasePrueba.MostrarPersona<Paloma>(paloma);
+

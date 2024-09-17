@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Library_Example_12._0._01
 {
-    public class ClasePrueba
+    public class ClasePrueba : IPrueba<Courier>
     {
+        public Courier MostrarPersona<U>(U nomnbre) where U : AnimalVolador
+        {
+            return new Courier();
+        }
     }
 }
