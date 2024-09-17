@@ -12,12 +12,18 @@ Console.WriteLine(mensaje.EnviarMensaje());
 
 
 List<IMensaje> mensajes = [paloma, courier, carta, mail, cuervo];
-
+Console.WriteLine("------------------------");
+Console.WriteLine("Implementacion implicita");
+Console.WriteLine("------------------------");
 foreach (IMensaje item in mensajes)
 {
     Console.WriteLine(item.EnviarMensaje());
-    
+
 }
 
 // Interfaz Explicita
+Console.WriteLine("------------------------");
+Console.WriteLine("Implementacion explicita");
+Console.WriteLine("------------------------");
 string mensajeSecreto = ((IEncriptado)cuervo).EnviarMensaje();
+Console.WriteLine(mensajeSecreto);

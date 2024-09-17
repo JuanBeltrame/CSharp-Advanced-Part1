@@ -8,7 +8,9 @@ namespace Library_Example_12._0._01
 {
     public class Courier : Persona, IMensaje
     {
-
+        public Courier()
+        {
+        }
         public Courier(string nombre, string apellido, string dni) : base (nombre, apellido, dni)
         {
             

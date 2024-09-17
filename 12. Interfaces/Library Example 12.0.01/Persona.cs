@@ -6,11 +6,22 @@ using System.Threading.Tasks;
 
 namespace Library_Example_12._0._01
 {
-    public abstract class Persona (string nombre, string apellido, string dni)
+    public abstract class Persona
     {
-        protected string? Nombre => nombre;
-        protected string? Apellido => apellido;
-        protected string? DNI => dni;
+        protected string? nombre;
+        protected string? apellido;
+        protected string? dni;
+
+        public Persona()
+        {
+
+        }
+        public Persona(string nombre, string apellido, string dni)
+        {
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.dni = dni;
+        }
 
         protected const string mensaje = "Estoy corriendo.";
 
