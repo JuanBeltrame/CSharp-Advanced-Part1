@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.1.01 Library", "12. Inte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View Example 10.0.01", "10. Excepciones\View Example 10.0.01\View Example 10.0.01.csproj", "{C9EF1670-8F70-4A15-B903-E3872F44CCFC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "13. Archivos y Serializacion", "13. Archivos y Serializacion", "{57F7EB5C-18A3-4D88-A8ED-8293980696B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
