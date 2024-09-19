@@ -46,7 +46,7 @@ static void LeerArchivoTextoConStreamReaderConUsing()
         while ((linea = sr.ReadLine()) != null)
         {
             Console.WriteLine(linea);
-            Console.WriteLine(linea);
+            
         }
     }
 }
