@@ -1,4 +1,6 @@
-﻿static void VerificarSistemaOperativo()
+﻿using System.Runtime;
+
+static void VerificarSistemaOperativo()
 {
     Console.WriteLine($"Es Windows? {OperatingSystem.IsWindows()}");
     Console.WriteLine($"Es Linux? {OperatingSystem.IsLinux()}");
@@ -14,7 +16,6 @@ static void ObtenerInformacionSistemaOperativo()
     Console.WriteLine($"Cantidad Procesadores Logicos: {Environment.ProcessorCount}");
     Console.WriteLine($"Tiene Arquitectura 64bits?: {Environment.Is64BitProcess}");
     Console.WriteLine($"Usuario OS: {Environment.UserName}");
-
 }
 
 static void ObtenerInformacionMediosDeAlmacenamiento()
@@ -79,7 +80,6 @@ static void TrabajarConRutasRelativasYAbsolutas()
     string rutaRelativa2 = Path.GetRelativePath(".", rutaEscritorio);
     Console.WriteLine($"Ruta Relativa App a escritorio: {rutaRelativa2}");
 
-
     string rutaMisDocumentos = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
     string rutaRelativa3 = Path.GetRelativePath(rutaEscritorio, rutaMisDocumentos);
     Console.WriteLine($"Ruta Relativa escritorio a mis Documentos: {rutaRelativa3}");
@@ -87,21 +87,33 @@ static void TrabajarConRutasRelativasYAbsolutas()
 
 static void TrabajarConNombresDeRutas()
 {
-    string rutaAbsoluta = Path.GetFullPath(".");
-    Console.WriteLine($"Ruta Absoluta: {rutaAbsoluta}");
+    string ruta = Path.Join(@"C:\\", @"GitHub\");
+    Console.WriteLine(ruta);
+    bool terminaConSeparadorDirectorio = Path.EndsInDirectorySeparator(ruta);
+    Console.WriteLine($"Termina con separador de directorio? {terminaConSeparadorDirectorio}");
 
-    string rutaEscritorio = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-    string rutraRelativa = Path.GetRelativePath(rutaEscritorio, ".");
-    Console.WriteLine($"Ruta Relativa escritorio a App: {rutaAbsoluta}");
+    ruta = Path.Join(@"C:\\", @"GitHub");
+    Console.WriteLine(ruta);
+    terminaConSeparadorDirectorio = Path.EndsInDirectorySeparator(ruta);
+    Console.WriteLine($"Termina con separador de directorio? {terminaConSeparadorDirectorio}");
 
-    string rutaRelativa2 = Path.GetRelativePath(".", rutaEscritorio);
-    Console.WriteLine($"Ruta Relativa App a escritorio: {rutaRelativa2}");
+    ruta = ".";
+    string[] archivos = Directory.GetFiles(ruta);
+    foreach (string archivo in archivos)
+        Console.WriteLine(archivo);
 
+    ruta = Path.Combine(".", "View Example 13.0.01.csproj");
+    string extension = Path.GetExtension(ruta);
+    string nombreArchivoConExt = Path.GetFileName(ruta);
+    string nombreArchivoSinExt = Path.GetFileNameWithoutExtension(ruta);
+    bool tieneExtension = Path.HasExtension(ruta);
+    string nombreRandom = Path.GetRandomFileName();
 
-    string rutaMisDocumentos = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-    string rutaRelativa3 = Path.GetRelativePath(rutaEscritorio, rutaMisDocumentos);
-    Console.WriteLine($"Ruta Relativa escritorio a mis Documentos: {rutaRelativa3}");
-
+    Console.WriteLine($"Extension: {extension}");
+    Console.WriteLine($"Nombre Archivo con Ext: {nombreArchivoConExt}");
+    Console.WriteLine($"Nombre Archivo sin Ext: {nombreArchivoSinExt}");
+    Console.WriteLine($"Tiene Extension? {tieneExtension}");
+    Console.WriteLine($"Nombre Random: {nombreRandom}");
 }
 
 //----- Main Program ------
@@ -110,7 +122,7 @@ static void TrabajarConNombresDeRutas()
 //ObtenerInformacionMediosDeAlmacenamiento();
 //------------------------------------------------
 //TrabajarConDirectorio();
-TrabajarConRutasRelativasYAbsolutas();
-TrabajarConNombresDeRutas();
+//TrabajarConRutasRelativasYAbsolutas();
+//TrabajarConNombresDeRutas();
 
 
