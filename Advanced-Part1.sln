@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.1.01 Library", "13. Arch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.1.01 View(NotePad)", "13. Archivos y Serializacion\13.1.01 View(NotePad)\13.1.01 View(NotePad).csproj", "{45FDDDD7-7159-4841-8CCB-64FFD6C964C2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "14. Delegates", "14. Delegates", "{FB73D80E-B0EF-4944-B202-FBA7E8262F3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
