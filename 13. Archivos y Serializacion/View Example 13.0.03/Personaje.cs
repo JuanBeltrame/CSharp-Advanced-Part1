@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace View_Example_13._0._03
 {
+    [XmlInclude(typeof(Mago))]
+    [XmlInclude(typeof(Guerrero))]
     public class Personaje
     {
         private int puntosdeVida;
