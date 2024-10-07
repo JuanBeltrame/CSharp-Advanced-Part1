@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View Example 14.0.02", "14.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "15. Lambda Expressions", "15. Lambda Expressions", "{18C5D85C-6B7F-440F-8462-D53CBF3F3738}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View Example 14.0.03", "14. Delegates\View Example 14.0.03\View Example 14.0.03.csproj", "{C8AAB503-A0F8-465C-8AF3-846A4D760332}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,10 @@ Global
 		{656E2748-536C-4AC0-9D1B-E9250E694500}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{656E2748-536C-4AC0-9D1B-E9250E694500}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{656E2748-536C-4AC0-9D1B-E9250E694500}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8AAB503-A0F8-465C-8AF3-846A4D760332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8AAB503-A0F8-465C-8AF3-846A4D760332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8AAB503-A0F8-465C-8AF3-846A4D760332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8AAB503-A0F8-465C-8AF3-846A4D760332}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -194,6 +200,7 @@ Global
 		{3BA1F8E0-8FBA-473A-A958-B6BA3F50748B} = {57F7EB5C-18A3-4D88-A8ED-8293980696B1}
 		{ECD5C5BD-FC47-412C-BB56-FE0E524BD070} = {FB73D80E-B0EF-4944-B202-FBA7E8262F3A}
 		{656E2748-536C-4AC0-9D1B-E9250E694500} = {FB73D80E-B0EF-4944-B202-FBA7E8262F3A}
+		{C8AAB503-A0F8-465C-8AF3-846A4D760332} = {FB73D80E-B0EF-4944-B202-FBA7E8262F3A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {33E317DD-9806-43D5-9649-4F9F91895E0F}
