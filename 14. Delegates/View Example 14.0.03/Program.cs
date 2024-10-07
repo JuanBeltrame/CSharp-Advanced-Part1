@@ -1,10 +1,10 @@
 ﻿using View_Example_14._0._03;
 
-public delegate void DelegadoSinParmetros();
-public delegate void DelegadoConUnInt(int milisegundos);
-public delegate int DelegadoComparar(int numero1, int numero2);
-public delegate void DelegadoMostrar(int numero1, int numero2);
-public delegate bool DelegadoCriterio(int numero);
+//public delegate void DelegadoSinParmetros();
+//public delegate void DelegadoConUnInt(int milisegundos);
+//public delegate int DelegadoComparar(int numero1, int numero2);
+//public delegate void DelegadoMostrar(int numero1, int numero2);
+//public delegate bool DelegadoCriterio(int numero);
 
 public class Program
 {
@@ -24,13 +24,13 @@ public class Program
 
     private static void Main(string[] args)
     {
-        DelegadoSinParmetros delegadoSaludar = Saludar;
-        DelegadoConUnInt delegadoSaludarConMilisegundos = SaludarConMilisegundos;
-        DelegadoComparar delegadoComparar = Comparar;
-        DelegadoMostrar delegadoMostrar = SaludarConMilisegundos;
-        DelegadoCriterio delegadoCriterio = EsPar;
-        DelegadoConUnInt delegadoOk = MostrarOk;
-        DelegadoConUnInt delegadoNoOk = MostrarNoOk;
+        Action delegadoSaludar = Saludar;
+        Action<int> delegadoSaludarConMilisegundos = SaludarConMilisegundos;
+        Func<int, int, int> delegadoComparar = Comparar;
+        Action<int, int> delegadoMostrar = SaludarConMilisegundos;
+        Predicate<int> delegadoCriterio = EsPar;
+        Action<int> delegadoOk = MostrarOk;
+        Action<int> delegadoNoOk = MostrarNoOk;
 
         for (int i = 0; i < 10; i++)
         {

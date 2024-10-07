@@ -8,19 +8,19 @@ namespace View_Example_14._0._03
 {
     public class Temporizador
     {
-        public static void Esperar(int milisegundos, DelegadoSinParmetros delegadoSinParmetros)
+        public static void Esperar(int milisegundos, Action delegadoSinParmetros)
         {
             Thread.Sleep(milisegundos);
             delegadoSinParmetros();
         }
 
-        public static void Esperar(int milisegundos, DelegadoConUnInt delegadoConUnInt)
+        public static void Esperar(int milisegundos, Action<int> delegadoConUnInt)
         {
             Thread.Sleep(milisegundos);
             delegadoConUnInt(milisegundos);
         }
 
-        public static void Esperar(int milisegundos, DelegadoCriterio delegadoCriterio, DelegadoConUnInt delegadoResultadoOk, DelegadoConUnInt delegadoResultadoNoOk)
+        public static void Esperar(int milisegundos, Predicate<int> delegadoCriterio, Action<int> delegadoResultadoOk, Action<int> delegadoResultadoNoOk)
         {
             if (delegadoCriterio(milisegundos))
             {
@@ -33,7 +33,7 @@ namespace View_Example_14._0._03
             }
         }
 
-        public static void EsperarElTIempo(int milisegundosUno, int milisegundosDos, DelegadoComparar delegadoComparar, DelegadoMostrar delegadoMostrar)
+        public static void EsperarElTIempo(int milisegundosUno, int milisegundosDos, Func<int, int, int> delegadoComparar, Action<int, int> delegadoMostrar)
         {
             int milisegundosMayor;
             int milisegundosMenor;
