@@ -38,7 +38,7 @@ public class Program
         }
 
 
-        Temporizador.Esperar(new Random().Next(3000, 5000), () => );
+        Temporizador.Esperar(new Random().Next(3000, 5000), delegadoSaludar);
         Temporizador.Esperar(new Random().Next(3000, 5000), delegadoSaludarConMilisegundos);
         Temporizador.EsperarElTIempo(new Random().Next(3000, 5000), new Random().Next(3000, 5000), delegadoComparar, delegadoMostrar);
     }
