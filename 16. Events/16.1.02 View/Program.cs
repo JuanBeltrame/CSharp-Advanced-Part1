@@ -1,4 +1,4 @@
-namespace _13._1._01_View_NotePad_
+namespace _16._1._02_View
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace _13._1._01_View_NotePad_
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Notepad());
+            Application.Run(new FrmReloj());
         }
     }
 }
