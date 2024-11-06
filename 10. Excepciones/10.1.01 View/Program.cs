@@ -1,6 +1,7 @@
 ﻿using _10._1._01_LanzarYAtraparLibrary;
 using _10._1._01_LanzarYAtraparLibrary.Exceptions;
 
+
 OtraClase otraClase = new();
 
 try

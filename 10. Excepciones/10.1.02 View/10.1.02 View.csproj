@@ -3,14 +3,15 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
-    <RootNamespace>_10._1._01_AtrapameWindowsForms</RootNamespace>
+    <RootNamespace>_10._1._01_View</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\10.1.02 AtrapameLibrary\10.1.02 AtrapameLibrary.csproj" />
+    <ProjectReference Include="..\10.1.02 AtrapameLibrary\10.1.02 Library.csproj" />
+    <ProjectReference Include="..\10.1.02 Library\10.1.02 Library.csproj" />
   </ItemGroup>
 
 </Project>
