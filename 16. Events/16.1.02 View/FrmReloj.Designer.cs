@@ -28,59 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            label1 = new Label();
-            richTextBox1 = new RichTextBox();
+            btnIniciar = new Button();
+            btnDetener = new Button();
+            lblHora = new Label();
+            richTextBox = new RichTextBox();
             SuspendLayout();
             // 
-            // button1
+            // btnIniciar
             // 
-            button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button1.Location = new Point(1300, 31);
-            button1.Name = "button1";
-            button1.Size = new Size(429, 58);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnIniciar.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnIniciar.Location = new Point(1300, 31);
+            btnIniciar.Name = "btnIniciar";
+            btnIniciar.Size = new Size(429, 58);
+            btnIniciar.TabIndex = 0;
+            btnIniciar.Text = "Iniciar reloj";
+            btnIniciar.UseVisualStyleBackColor = true;
+            btnIniciar.Click += btnIniciar_Click;
             // 
-            // button2
+            // btnDetener
             // 
-            button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button2.Location = new Point(1759, 31);
-            button2.Name = "button2";
-            button2.Size = new Size(429, 58);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            btnDetener.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnDetener.Location = new Point(1759, 31);
+            btnDetener.Name = "btnDetener";
+            btnDetener.Size = new Size(429, 58);
+            btnDetener.TabIndex = 1;
+            btnDetener.Text = "Detener reloj";
+            btnDetener.UseVisualStyleBackColor = true;
+            btnDetener.Click += btnDetener_Click;
             // 
-            // label1
+            // lblHora
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(32, 31);
-            label1.Name = "label1";
-            label1.Size = new Size(97, 41);
-            label1.TabIndex = 2;
-            label1.Text = "label1";
+            lblHora.AutoSize = true;
+            lblHora.Location = new Point(32, 31);
+            lblHora.Name = "lblHora";
+            lblHora.Size = new Size(337, 41);
+            lblHora.TabIndex = 2;
+            lblHora.Text = "DD/MM/YYYY HH:MI:SS";
             // 
-            // richTextBox1
+            // richTextBox
             // 
-            richTextBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            richTextBox1.Location = new Point(32, 108);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(2156, 1036);
-            richTextBox1.TabIndex = 3;
-            richTextBox1.Text = "";
+            richTextBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            richTextBox.Location = new Point(32, 108);
+            richTextBox.Name = "richTextBox";
+            richTextBox.Size = new Size(2156, 1036);
+            richTextBox.TabIndex = 3;
+            richTextBox.Text = "";
             // 
             // FrmReloj
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(2214, 1172);
-            Controls.Add(richTextBox1);
-            Controls.Add(label1);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(richTextBox);
+            Controls.Add(lblHora);
+            Controls.Add(btnDetener);
+            Controls.Add(btnIniciar);
             Name = "FrmReloj";
             Text = "Reloj";
             ResumeLayout(false);
@@ -89,9 +91,9 @@
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Label label1;
-        private RichTextBox richTextBox1;
+        private Button btnIniciar;
+        private Button btnDetener;
+        private Label lblHora;
+        private RichTextBox richTextBox;
     }
 }
