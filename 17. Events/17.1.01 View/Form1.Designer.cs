@@ -1,4 +1,4 @@
-﻿namespace _16._1._01_View
+﻿namespace _17._1._01_View
 {
     partial class Form1
     {

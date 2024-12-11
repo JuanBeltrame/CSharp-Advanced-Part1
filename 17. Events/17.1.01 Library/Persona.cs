@@ -1,4 +1,4 @@
-﻿namespace _16._1._01_Library
+﻿namespace _17._1._01_Library
 {
     public delegate void DelegadoString(string msg);
 

@@ -3,14 +3,10 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
-    <RootNamespace>_16._1._01_View</RootNamespace>
+    <RootNamespace>_15._1._01_View</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\16.1.01 Library\16.1.01 Library.csproj" />
-  </ItemGroup>
 
 </Project>
