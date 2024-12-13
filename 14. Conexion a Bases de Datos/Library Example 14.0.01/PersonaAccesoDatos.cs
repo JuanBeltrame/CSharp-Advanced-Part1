@@ -17,7 +17,10 @@ namespace Library_Example_14._0._01
         static PersonaAccesoDatos()
         {
             connectionString = "Server=.;Database=UTN_DB;Trusted_Connection=True";
+            command = new SqlCommand();
             connection = new SqlConnection(connectionString);
+            command.Connection = connection;
+            command.CommandType = System.Data.CommandType.Text;
         }
     }
 }
