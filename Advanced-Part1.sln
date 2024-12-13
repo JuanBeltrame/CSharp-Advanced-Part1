@@ -81,6 +81,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17.1.01 View", "17. Events\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library Example 14.0.01", "14. Conexion a Bases de Datos\Library Example 14.0.01\Library Example 14.0.01.csproj", "{D081E8D1-D566-42DF-D559-A3C29C076587}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View Example 14.0.01", "14. Conexion a Bases de Datos\View Example 14.0.01\View Example 14.0.01.csproj", "{6B2F2B94-21E9-45DE-89F9-7163C2D5FA80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -211,6 +213,10 @@ Global
 		{D081E8D1-D566-42DF-D559-A3C29C076587}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D081E8D1-D566-42DF-D559-A3C29C076587}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D081E8D1-D566-42DF-D559-A3C29C076587}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B2F2B94-21E9-45DE-89F9-7163C2D5FA80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B2F2B94-21E9-45DE-89F9-7163C2D5FA80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B2F2B94-21E9-45DE-89F9-7163C2D5FA80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B2F2B94-21E9-45DE-89F9-7163C2D5FA80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -247,6 +253,7 @@ Global
 		{39C1C153-D8F5-641C-BBF6-8052CED463F3} = {D3D3C07A-E4B1-441A-BDFE-70AC9E2AD643}
 		{6619F2E5-344A-E037-3FF7-A9E91330CD6A} = {D3D3C07A-E4B1-441A-BDFE-70AC9E2AD643}
 		{D081E8D1-D566-42DF-D559-A3C29C076587} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{6B2F2B94-21E9-45DE-89F9-7163C2D5FA80} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {33E317DD-9806-43D5-9649-4F9F91895E0F}
