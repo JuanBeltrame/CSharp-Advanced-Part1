@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Library_Example_14._0._01;
+
+
+
+
+
+List<Persona> personas = PersonaAccesoDatos.Leer();
+
+foreach (Persona item in personas)
+{
+    Console.WriteLine(item.ToString());
+}
