@@ -116,7 +116,5 @@ namespace Library_Example_14._0._01
                 connection.Close();
             }
         }
-
-        
     }
 }
