@@ -31,12 +31,12 @@ namespace Library_Example_14._0._01
             {
                 connection.Open();
                 command!.CommandText = "SELECT * FROM Persona";
-                SqlDataReader dataReader = command.ExecuteReader();
-
-                while (dataReader.Read())
-                    personas.Add(new Persona(dataReader["nombre"].ToString()!, dataReader["apellido"].ToString()!, Convert.ToInt32(dataReader["id"])));
-
-                return personas;
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+                    while (dataReader.Read())
+                        personas.Add(new Persona(dataReader["nombre"].ToString()!, dataReader["apellido"].ToString()!, Convert.ToInt32(dataReader["id"])));
+                }
+                    return personas;
             }
             catch (Exception)
             {
