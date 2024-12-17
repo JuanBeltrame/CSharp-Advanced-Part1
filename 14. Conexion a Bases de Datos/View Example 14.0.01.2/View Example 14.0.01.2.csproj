@@ -9,4 +9,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Library Example 14.0.01\Library Example 14.0.01.csproj" />
+  </ItemGroup>
+
 </Project>
